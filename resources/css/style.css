@@ -1,6 +1,38 @@
+html{
+  font-family: Helvetica;
+  font-size: 16px;
+}
+h1{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1rem;
+}
+h1, h4{
+  font-weight: bold;
+  padding: 1rem 4rem;
+  }
 .main-banner{
   background-image: url("file:///D:/Projects_Web/SecretAgentSupply/resources/images/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25em;
+
 }
-.new-arrival{
+.headline{
   background-color: black;
+  color: white;
+  position: relative;
+  width: 28em;
+  top: 9em;
+}
+
+.line1{
+  padding-top: 3em;
+}
+
+.line2{
+  line-height: 1.1em;
+  padding-bottom: 1.5em;
 }
