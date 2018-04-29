@@ -64,7 +64,7 @@ span{
   font-weight: bold;
 }
 
-.navigation{
+.navigation, .navigation2{
   background-color: firebrick;
   color: white;
 }
@@ -77,6 +77,10 @@ span{
   list-style: none;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.navigation2 ul{
+  display: none;
 }
 
 .product-grid{
@@ -134,5 +138,93 @@ span.data{
   background-color: black;
   color: white;
   height: 5rem;
+  display: flex;
   align-items: center;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) /*and (orientation: landscape)*/ {
+  .navigation ul{
+    display: none;
+  }
+
+  .navigation2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em 0;
+    list-style: none;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .product-grid{
+    flex-wrap: wrap;
+  }
+
+  .pen, .watch, .glasses{
+    width: 47%;
+  }
+
+  .business{
+    flex-wrap: wrap;
+  }
+
+  .location, .hours{
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) /*, (orientation: portrait)*/ {
+  .main-banner{
+    height: 15rem;
+  }
+
+  .headline{
+    width: 100%;
+    top: 10rem;
+  }
+
+  .navigation ul{
+    display: none;
+  }
+
+  .navigation2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em 0;
+    list-style: none;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .product-grid{
+    flex-wrap: wrap;
+  }
+
+  .line1{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .line2{
+    padding-left: 2rem;
+    padding-top: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .pen, .watch, .glasses{
+    width: 90%;
+  }
+
+  .business{
+    flex-wrap: wrap;
+  }
+
+  .location, .hours{
+    width: 90%;
+  }
 }
